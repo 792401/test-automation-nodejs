@@ -24,7 +24,7 @@ jobs:
         run: npm ci
       - name: Run tests
         working-directory: ./api
-        run: npm api-tests
+        run: npm run api-tests
       - name: Upload test report
         if: always()
         uses: actions/upload-artifact@v2
