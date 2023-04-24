@@ -20,10 +20,10 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        working-directory: ./ui
+        working-directory: ./api
         run: npm ci
       - name: Run tests
-        working-directory: ./ui
+        working-directory: ./api
         run: npm api-tests
       - name: Upload test report
         if: always()
